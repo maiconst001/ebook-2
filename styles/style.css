@@ -187,7 +187,7 @@ canvas {
     border-radius: 10px;
     background-image: url('../images/baclivro.jpg');
     
-    background-size: 60%;
+    background-size: 100%;
     
     animation: book 120s linear infinite alternate;
     background-repeat: no-repeat;
@@ -196,9 +196,7 @@ canvas {
 }
 
 @keyframes book {
-    to {
-        background-size: 100%;
-    }
+
 
 }
 

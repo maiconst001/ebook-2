@@ -16,6 +16,10 @@ body {
     height: 100vh;
 }
 
+.andul {
+    max-width: 900px;
+}
+
 header {
     padding: 30px;
     background-color: rgb(101, 214, 25);

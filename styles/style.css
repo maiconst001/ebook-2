@@ -16,10 +16,6 @@ body {
     height: 100vh;
 }
 
-.andul {
-    max-width: 900px;
-}
-
 header {
     padding: 30px;
     background-color: rgb(101, 214, 25);
@@ -214,6 +210,8 @@ canvas {
     position: relative;
     z-index: 1;
 }
+
+
 
 
 
@@ -451,7 +449,8 @@ canvas {
     background-color: black;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
-    max-width: 95%;
+    width: 95%;
+    max-width: 1000px;
 }
 
 .andul strong {
@@ -504,6 +503,7 @@ canvas {
 .questions {
     width: 100%;
     padding: 40px;
+    max-width: 1000px;
 }
 
 .qtitle {
@@ -598,3 +598,12 @@ footer {
     }
 }
 
+@media (max-width: 500px) {
+    .back-crt {
+        overflow: hidden;
+        padding: 0px;
+    }
+    .back-crt img {
+        top: -150px;
+    }
+}

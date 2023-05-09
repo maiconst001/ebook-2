@@ -607,3 +607,33 @@ footer {
         top: -150px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .back-crt {
+        overflow: hidden;
+        padding: 0px;
+    }
+    .back-crt img {
+        top: -200px;
+    }
+} 
+
+
+
+body::-webkit-scrollbar {
+    background: rgba(100, 100, 100, 0.37);
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(82, 255, 29, 0.74);
+    border-radius: 100px;
+}
+
+body::-webkit-scrollbar-button {
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+    display: none;
+}

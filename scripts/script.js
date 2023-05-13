@@ -116,3 +116,8 @@ var width = document.body.clientWidth
 if (width > 700) {
     particles_start()
 }
+
+
+function addCart() {
+    alert()  
+}

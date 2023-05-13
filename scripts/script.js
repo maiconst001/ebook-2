@@ -121,3 +121,5 @@ if (width > 700) {
 function addCart() {
     fbq('track', 'AddToWishlist');
 }
+
+var pagination = false

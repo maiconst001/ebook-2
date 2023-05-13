@@ -119,5 +119,5 @@ if (width > 700) {
 
 
 function addCart() {
-    alert()  
+    fbq('track', 'AddToWishlist');
 }

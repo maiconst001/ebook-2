@@ -451,6 +451,7 @@ canvas {
     border-radius: 10px;
     width: 95%;
     max-width: 1000px;
+    text-transform: capitalize;
 }
 
 .andul strong {
@@ -541,6 +542,39 @@ footer {
     margin-bottom: 30px;
     font-weight: bold;
     font-size: 15px;
+}
+
+
+.gain-this  {
+    border: 2px solid white;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: black;
+    width: 90%;
+    max-width: 900px;
+    flex-direction: column;
+}
+
+
+.gain-this .text {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 170%;
+    font-weight: normal;
+    text-transform: none;
+    padding: 40px 5px;
+}
+
+
+.gain2 {
+    border: 2px solid rgb(46, 240, 39);
+}
+.gain2 .colored-1 {
+    color: rgb(46, 240, 39);
+}
+
+.text .colored-1 {
+    text-transform: uppercase;
 }
 
 @media (max-width: 500px) {

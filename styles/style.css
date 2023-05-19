@@ -6,8 +6,8 @@
 }
 
 *::selection {
-    color: rgb(253, 102, 15);
-    background-color: gold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(240, 176, 59);
 }
 
 body {
@@ -18,9 +18,9 @@ body {
 
 header {
     padding: 30px;
-    background-color: rgb(101, 214, 25);
     min-height: 150px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     color: white;
     text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.116);
@@ -28,7 +28,37 @@ header {
     z-index: 1000;
     position: relative;
     z-index: 1;
+    background-image: url('https://osfornecedoressecretos.com/wp-content/uploads/2023/04/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0px;
+    overflow: hidden;
 }
+
+header::after {
+    content: '';
+    background-image: linear-gradient(rgba(224, 172, 29, 0), rgb(0, 0, 0));
+    width: 130%;
+    height: 100px;
+}
+
+.vid {
+    margin: 100px 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vid iframe {
+    width: 90vw;
+    max-width: 900px;
+    box-shadow: 1px 2px 60px 5px rgba(255, 166, 0, 0.589);
+    margin: 0px;
+    padding: 0px;
+}
+
 
 
 .max {
@@ -57,19 +87,21 @@ header .p-one {
     padding: 12px 30px;
     margin: 20px;
     border-radius: 100px;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 25px;
     color: white;
     border: 2px solid rgba(128, 128, 128, 0.301);
     cursor: pointer;
     width: 100%;
     max-width: 600px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .buy-button a {
     display: flex;
+    justify-content: center;
     text-decoration: none;
+    width: 100%;
 }
 
 main {
@@ -176,7 +208,6 @@ canvas {
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 .ebook {
     display: flex;
-    background-color: #000;
     align-items: center;
     font-size: 45px;
     padding: 40px 20px;
@@ -198,6 +229,7 @@ canvas {
     overflow: visible;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .back-crt img {
@@ -565,12 +597,33 @@ footer {
     padding: 40px 5px;
 }
 
+.gain-this ul {
+    list-style: none;
+}
+
+
+.gain-this li {
+    display: flex;
+    color: gold;
+    text-transform: uppercase;
+    padding-left: 60px;
+}
+
+.gain-this .text i {
+    margin-right: 10px;
+    border-radius: 100%;
+    flex-shrink: 0;
+    width: 40px;
+    padding: 3px;
+    height: 40px;
+}
 
 .gain2 {
-    border: 2px solid rgb(46, 240, 39);
+    border: 2px solid rgb(240, 176, 39);
+    margin-top: 40px;
 }
 .gain2 .colored-1 {
-    color: rgb(46, 240, 39);
+    color: rgb(236, 165, 72);
 }
 
 .text .colored-1 {

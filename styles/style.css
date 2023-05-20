@@ -10,6 +10,10 @@
     background-color: rgb(240, 176, 59);
 }
 
+:root {
+    --swiper-theme-color: #faba0c;
+}
+
 body {
     background-color: black;
     color: white;
@@ -17,7 +21,7 @@ body {
 }
 
 header {
-    padding: 30px;
+    padding: 10px;
     min-height: 150px;
     display: flex;
     flex-direction: column;
@@ -33,6 +37,7 @@ header {
     background-size: cover;
     padding-bottom: 0px;
     overflow: hidden;
+    padding-top: 0px;
 }
 
 header::after {
@@ -40,6 +45,14 @@ header::after {
     background-image: linear-gradient(rgba(224, 172, 29, 0), rgb(0, 0, 0));
     width: 130%;
     height: 100px;
+}
+
+header::before {
+    content: '';
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(224, 172, 29, 0));
+    width: 130%;
+    height: 100px;
+    position: absolute;
 }
 
 .vid {
@@ -71,6 +84,7 @@ header .p-one {
     text-transform: uppercase;
     font-size: 25px;
     text-align: center;
+    margin-top: 40px;
 }
 
 
@@ -125,7 +139,7 @@ main {
 }
 
 .colored-1 {
-    color: rgb(224, 178, 52);
+    color: rgb(248, 210, 42);
 }
 
 
@@ -283,7 +297,7 @@ canvas {
 .swp2 .content {
     width: 100%;
     min-height: 600px;
-    border: 2px solid rgba(240, 240, 240, 0.712);
+    border: 2px solid rgba(240, 240, 240, 0.171);
     border-radius: 16px;
     padding: 40px;
     color: white;
@@ -361,7 +375,6 @@ canvas {
 .quadro .qin1, .qin2, .qin3, .qin4 {
     width: 30px;
     height: 30px;
-    border: 2px solid white;
 }
 
 .quadro .qin1 {
@@ -607,6 +620,10 @@ footer {
     color: gold;
     text-transform: uppercase;
     padding-left: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .gain-this .text i {
@@ -619,11 +636,10 @@ footer {
 }
 
 .gain2 {
-    border: 2px solid rgb(240, 176, 39);
     margin-top: 40px;
 }
 .gain2 .colored-1 {
-    color: rgb(236, 165, 72);
+    color: rgb(252, 224, 149);
 }
 
 .text .colored-1 {
@@ -670,10 +686,39 @@ footer {
     width: 100%;
 }
 
+.slide-s {
+    width: 100%;
+    max-width: 1000px;
+    color: white;
+}
+
+.slide-s *::after {
+    color: white;
+}
+
+.drop-me {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
 
 @media (max-width: 500px) {
     header .p-one{
-        font-size: 18px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .gain-this li {
+        padding-left: 5px;
+    }
+    .p-one h1{
+        font-size: 28px;
+        padding: 0px;
+        font-weight: 600;
     }
 
     .patrocined {
@@ -769,7 +814,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgba(82, 255, 29, 0.74);
+    background-color: rgba(247, 201, 51, 0.74);
     border-radius: 100px;
 }
 
